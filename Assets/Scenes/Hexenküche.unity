@@ -189,7 +189,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &208946189
@@ -265,7 +265,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5613208, g: 1, b: 0.9831691, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -449,7 +449,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &974311672
@@ -478,6 +478,14 @@ PrefabInstance:
     - target: {fileID: 678440833016867354, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
       propertyPath: m_Name
       value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558841323752251180, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558841323752251180, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 289478037
       objectReference: {fileID: 0}
     - target: {fileID: 5036652386497764594, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -519,7 +527,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6418036396572460251, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6418036396572460251, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 969409461
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 503624940639860130, guid: 10ec53fb4bd53ab4b8a04945de619bc3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
