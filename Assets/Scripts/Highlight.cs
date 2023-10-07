@@ -10,6 +10,8 @@ public class Highlight : MonoBehaviour
     // Start is called before the first frame update
     
     void Start(){
+        m_Sprite = GetComponent<SpriteRenderer>();
+        m_Sprite.sprite = m_ParentSprite.sprite;
         m_Sprite.enabled = false;
     }
 
