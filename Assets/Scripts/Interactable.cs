@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
     }
     private void OnMouseDown(){
         Debug.Log("Click!!");
-        m_Witch.MoveTo(ObjektTransform.position);
+        m_Witch.SetDestination(ObjektTransform);
     }
     // Update is called once per frame
 }

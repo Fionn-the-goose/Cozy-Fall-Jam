@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Highlight: {fileID: 503624940639860130}
+  m_Witch: {fileID: 5622904783879274867, guid: a313baa960582b84e93ceba022dadd80, type: 3}
 --- !u!58 &1873905142508446027
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -6,19 +6,26 @@ using UnityEngine.UIElements;
 public class Witch : MonoBehaviour
 {
     public static Witch instance;
-    public Transform m_Transform;
-    private Transform Destination;
+    public float m_Speed = 0.01f;
+    public float m_HoldingTreshold = 0.1f;
+    private Transform destination;
+    private float dist = 0.0f;
     void Start(){
-        m_Transform = GetComponent<Transform>();
     }
     public void MoveTo(Vector3 obj_pos){
         Vector3 x_achse = new Vector3(obj_pos.x, 0.0f, 0.0f);
-        m_Transform.Translate((x_achse));
+        transform.Translate((x_achse));
     }
-    public void SetDestination(Transform transform){
-        Destination = transform;
+    public void SetDestination(Transform other){
+        destination = other;
+        dist = Vector2.Distance(other.position, transform.position);
     }
     void Update(){
-        
+        if(dist>=m_HoldingTreshold){
+            Debug.Log(dist);
+            Vector2 movement = new Vector2(m_Speed, 0.0f);
+            transform.Translate(movement);
+            dist = Vector2.Distance(destination.position, transform.position);
+        }
     }
 }
