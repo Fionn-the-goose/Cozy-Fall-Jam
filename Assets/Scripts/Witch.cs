@@ -18,14 +18,14 @@ public class Witch : MonoBehaviour
     }
     public void SetDestination(Transform other){
         destination = other;
-        dist = Vector2.Distance(other.position, transform.position);
+        dist = other.position.x - transform.position.x;
     }
     void Update(){
         if(dist>=m_HoldingTreshold){
             Debug.Log(dist);
             Vector2 movement = new Vector2(m_Speed, 0.0f);
             transform.Translate(movement);
-            dist = Vector2.Distance(destination.position, transform.position);
+            dist = destination.position.x - transform.position.x;
         }
     }
 }
