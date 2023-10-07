@@ -7,6 +7,7 @@ public class Witch : MonoBehaviour
 {
     public static Witch instance;
     public Transform m_Transform;
+    private Transform Destination;
     void Start(){
         m_Transform = GetComponent<Transform>();
     }
@@ -14,8 +15,10 @@ public class Witch : MonoBehaviour
         Vector3 x_achse = new Vector3(obj_pos.x, 0.0f, 0.0f);
         m_Transform.Translate((x_achse));
     }
-    void Update()
-    {
+    public void SetDestination(Transform transform){
+        Destination = transform;
+    }
+    void Update(){
         
     }
 }

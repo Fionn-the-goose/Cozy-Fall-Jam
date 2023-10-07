@@ -9,18 +9,17 @@ public class Interactable : MonoBehaviour
     public Witch m_Witch;
     private SpriteRenderer Object_Sprite;
     private Transform ObjektTransform;
-    private void Start() {
+    private void Start(){
         ObjektTransform = GetComponent<Transform>();
         Object_Sprite = GetComponent<SpriteRenderer>();
     }
-    private void OnMouseEnter()
-    {
+    private void OnMouseEnter(){
         m_Highlight.m_isActive = true;
     }
-    private void OnMouseExit() {
+    private void OnMouseExit(){
         m_Highlight.m_isActive = false; 
     }
-    private void OnMouseDown() {
+    private void OnMouseDown(){
         Debug.Log("Click!!");
         m_Witch.MoveTo(ObjektTransform.position);
     }
